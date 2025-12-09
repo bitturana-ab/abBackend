@@ -1,9 +1,12 @@
 import mongoose from "mongoose";
 
-const UserSchema = new mongoose.Schema({
-  username: String,
-  password: String,
-});
+const userSchema = new mongoose.Schema(
+  {
+    username: String,
+    password: String,
+  },
+  { timeseries: true }
+);
 
-const User = mongoose.Model("User", UserSchema);
+const User = mongoose.model("User", userSchema);
 export default User;
