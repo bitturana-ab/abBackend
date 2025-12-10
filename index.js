@@ -1,7 +1,6 @@
 // console.log("ab");
 import express from "express";
 const app = express();
-const port = 4000;
 import bodyParser from "body-parser";
 // routes import
 import userRouter from "./routes/user.routes.js";

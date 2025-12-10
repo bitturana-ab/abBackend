@@ -4,8 +4,8 @@ export const signUp = async (req, res) => {
   const { username, password } = req.body;
   try {
     const user = await User.create({
-      username: username,
-      password: password,
+      username,
+      password,
     });
   } catch (error) {}
 };
