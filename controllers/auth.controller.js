@@ -9,3 +9,5 @@ export const signUp = async (req, res) => {
     });
   } catch (error) {}
 };
+
+export const login = async (req, res) => {};
